@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Header = props => {
+  console.log(props)
   return (
     <>
       <figure className="image is-128x128">
@@ -8,6 +9,7 @@ const Header = props => {
       </figure>
       <h2>{props.car.name}</h2>
       <p>Amount: ${props.car.price}</p>
+      <p>Additional Cost ${props.additionalPrice}</p>
     </>
   );
 };
